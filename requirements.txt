@@ -1,8 +1,10 @@
-ultralytics==8.0.0
-opencv-python==4.8.1.78
+setuptools==69.0.3
+wheel==0.42.0
+ultralytics==8.1.0
+opencv-python-headless==4.9.0.80
 numpy==1.24.3
-scipy==1.11.1
-python-telegram-bot==20.3
+scipy==1.11.4
+python-telegram-bot==20.7
 nest-asyncio==1.5.8
-Pillow==10.0.0
+Pillow==10.2.0
 python-dateutil==2.8.2
