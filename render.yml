@@ -2,18 +2,15 @@ services:
   - type: worker
     name: ai-dart-coach
     env: python
-    region: frankfurt  # или другой регион
-    buildCommand: |
-      pip install -r requirements.txt
-      python -c "from ultralytics import YOLO; YOLO('yolov8n-pose.pt')"  # Предзагрузка модели
+    region: frankfurt  # или singapore, ohio, oregon
+    buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        sync: false  # Вы установите это вручную
       - key: ADMIN_IDS
         value: "8443012380"
-      - key: REAL_ANALYSIS
-        value: "True"
       - key: TEST_MODE
         value: "True"
-    plan: free  # или starter/pro для больших требований
+    plan: free
+    autoDeploy: true
