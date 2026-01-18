@@ -1,9 +1,2 @@
 flask==3.0.3
 gunicorn==22.0.0
-
-%%writefile Procfile  
-web: gunicorn main:app
-
-from google.colab import files
-files.download('requirements.txt')
-files.download('Procfile')
