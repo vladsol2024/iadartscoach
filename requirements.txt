@@ -1,6 +1,6 @@
-pyTelegramBotAPI
-ultralytics
-opencv-python
-matplotlib
-reportlab
-numpy
+pyTelegramBotAPI==4.15.4
+ultralytics==8.1.0
+opencv-python==4.9.0.80
+matplotlib==3.8.2
+reportlab==4.0.8
+numpy==1.26.3
